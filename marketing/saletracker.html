@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales Tracker</title>
+</head>
+<body>
+	<h1>Sales Tracker</h1>
+	<form action="orderform.php" method="post">
+		<label for="goods-type">Type of Goods:</label>
+		<select name="goods-type" id="goods-type">
+			<option value="Foods">Foods</option>
+			<option value="Buns">Buns</option>
+			<option value="Beverages">Beverages</option>
+		</select>
+
+		<label for="item-name">Item Name:</label>
+		<select name="item-name" id="item-name">
+			<optgroup label="Snacks">
+				<option value="Takoyaki">Takoyaki</option>
+				<option value="Dumplings">Dumplings</option>
+				<option value="Nachos">Nachos</option>
+				<option value="Siomai">Siomai</option>
+			</optgroup>
+			<optgroup label="Buns">
+				<option value="Classic Burger">Classic Burger</option>
+				<option value="Burger w/ cheese">Burger w/ cheese</option>
+				<option value="Burger Overload">Burger Overload</option>
+				<option value="Classic Hotdog Sandwich">Classic Hotdog Sandwich</option>
+				<option value="Hotdog Sandwich Overload">Hotdog Sandwich Overload</option>
+			</optgroup>
+			<optgroup label="Milktea">
+				<option value="Chocolate">Chocolate</option>
+				<option value="Okinawa">Okinawa</option>
+				<option value="Dark Chocolate">Dark Chocolate</option>
+				<option value="Hokkaido">Hokkaido</option>
+				<option value="Dark Belgian Choco">Dark Belgian Choco</option>
+				<option value="Choco Kisses">Choco Kisses</option>
+				<option value="Thai">Thai</option>
+				<option value="Wintermelon">Wintermelon</option>
+			</optgroup>
+			<optgroup label="Fruit tea">
+				<option value="Blueberry">Blueberry</option>
+				<option value="Strawberry">Strawberry</option>
+				<option value="Lychee">Lychee</option>
+				<option value="Green apple">Green apple</option>
+				<option value="Mango">Mango</option>
+			</optgroup>
+			<optgroup label="Fruit Soda">
+				<option value="Blue Lemonade">Blue Lemonade</option>
+				<option value="Blueberry">Blueberry</option>
+				<option value="Strawberry">Strawberry</option>
+				<option value="Mango">Mango</option>
+				<option value="Green Apple">Green Apple</option>
+			</optgroup>
+		</select>
+
+		<label for="amount-cost">Amount Cost:</label>
+		<input type="number" name="amount-cost" id="amount-cost" required>
+
+		<label for="date-purchased">Date Purchased:</label>
+		<input type="date" name="date-purchased" id="date-purchased" required>
+
+		<label for="quantity">Quantity:</label>
+		<input type="number" name="quantity" id="quantity" required>
+
+		<label for="payment-mode">Payment mode:</label>
+		<select name="payment-mode" id="payment-mode">
+			<option value="Cash">Cash</option>
+			<option value="Credit Card">Credit Card</option>
+			<option value="Debit Card">Debit Card</option>
+			<option value="GCash">GCash</option>
+		</select>
+
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

@@ -48,8 +48,6 @@
     echo "Amount: " . $amount . "<br>";
     echo "Payment Method: " . $payment_method . "<br>";
 
-    echo "Accounts Receivable Data";
-
     // Accounts Receivable Data
     $customerName2 = $_POST['customer-name2'];
     $transactionDate2 = $_POST['transaction-date2'];

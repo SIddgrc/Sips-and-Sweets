@@ -1,4 +1,4 @@
-<?
+<?php
 
 <form action="update-date.php" method="POST">
     <label for="date-purchased">Date Purchased:</label>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAS_HRD_NEW_Employee</title>
+</head>
+<body background="minimalist_wallpaper_4k___at_at_by_jorgehardt_dfpbpgm-pre.jpg" 
+style="padding: 50px; background-repeat: no-repeat; 
+background-position: center; 
+background-attachment: fixed; 
+background-size: cover; 
+font-family: Arial, Helvetica, sans-serif;">
+    <center>
+	<h1>Employees Information</h1>
+    <form method="post" action="submit.php">
+	<table border="0" cellpadding="7">
+        <h2>Personal Information</h2>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="name" id="name"></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td> <textarea name="address" ></textarea></textarea> </td>
+		</tr>
+		<tr>
+  	   <tr>
+			<td>Contact No.:</td>
+			<td><input type="text" name="contact-number"></td>
+		</tr>
+			<td>Email:</td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td>Facebook Account:</td>
+			<td><input type="facebook" name="facebook"></td>
+		</tr>
+		<tr>
+			<td>Father's Name:</td>
+			<td><input type="fatname" name="fatname"></td>
+		</tr>
+        <tr>
+			<td>Mother's Name:</td>
+			<td><input type="motname" name="motname"></td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+			</td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td><input type="number" name="age"></td>
+		</tr>
+		<tr>
+			<td>Civil Status:</td>
+			<td>
+				<select name="civilstatus">
+					<option value="single">Single</option>
+					<option value="married">Married</option>
+					<option value="widow">Widowed</option>
+                    <option value="divorced">Divorced</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Next"></td>
+		</tr>
+    </form>
+	</table>
+    </center>
+</body>
+</html>

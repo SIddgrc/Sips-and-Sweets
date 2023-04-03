@@ -1,44 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Customer Data Request Form</title>
+	<title>Login Form</title>
+	<link rel="stylesheet" href="sns.css">
 </head>
 <body>
-	<center>
-	<h1>Customer Information Form</h1>
-	<table border="5">
-		<tr>
-	<form action="customerdata.php" method="POST">
-		<td><label for="full-name">Full Name:</label><br></td>
-		<td><input type="text" id="full-name" name="full-name"><br></td>
-		</tr>
-			<tr>
-			<td><label for="contact-info">Contact Number/Email:</label><br></td>
-			<td><input type="text" id="contact-info" name="contact-info"><br></td>
-			</tr>
-		<tr>
-		<td><label for="address">Address:</label><br></td>
-		<td><input type="text" id="address" name="address"><br></td>
-		</tr>
-		<tr>
-		<td><label for="company-name">Company Name:</label><br></td>
-		<td><input type="text" id="company-name" name="company-name"><br></td>
-		</tr>
-		<tr>
-		<td><label for="bday">Birthday:</label><br></td>
-		<td><input type="date" id="bday" name="bday"><br></td>
-		</tr>
-		<tr>
-		<td><b> Gender </b></td>
-		<td>
-		<label><input type="radio" name="male" value="m"> Male</label>
-		<label><input type="radio" name="female" value="f"> Female</label>
-		</td>
-		</select><br><br>
-		</tr> 
-	</table>
-		<input align="center" type="Submit">
-	</form> </tr>
-	</center>
+	<div class="form-container">
+		<form>
+			<center><h1 class="form-title">Login Form</h1></center>
+			<fieldset class="form-fieldset">
+				<center><label for="email" class="form-label">Email</label></center>
+				<input type="email" id="email" name="email" class="form-input" required>
+
+				<center><label for="password" class="form-label">Password</label></center>
+				<input type="password" id="password" name="password" class="form-input" required>
+
+				<center><button type="submit" class="form-button">Log In</button><center>
+			</fieldset>
+		</form>
+	</div>
 </body>
 </html>

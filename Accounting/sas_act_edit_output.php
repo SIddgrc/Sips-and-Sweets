@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Output Page</title>
-    <style>  
+    <style>
         h1 {
         background-color: #ffffff;
         padding: 20px;
@@ -24,9 +24,23 @@
         margin-top: 2.5%;
         line-height: 1.5em;
         }
+        .form-button {
+        display: inline-block; padding: 10px 20px;
+        background-color: #fb6f92; color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        }
+        /* Form button hover */
+        .form-button:hover {
+        background-color: #ffc2d1;
+        }
     </style>
 </head>
 <body>
+
     <?php
     echo "<form action='sas_act_new_editpage.php' method='POST'>";
     // Header
@@ -150,7 +164,7 @@
 
     // submit button
 
-    echo "<input type='submit' name='edit' value='Edit'>";
+    echo "<input class='form-button' type='submit' name='edit' value='Edit'>";
     echo "</form>";
         ?>
 

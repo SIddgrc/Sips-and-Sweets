@@ -20,7 +20,8 @@
         background-color: #fde7e7;
         font-family: Arial, sans-serif;
         font-size: 16px;
-        margin-left: 5%;
+        margin-left: 200px;
+        margin-right: 200px;
         margin-top: 2.5%;
         line-height: 1.5em;
         }
@@ -163,7 +164,7 @@
     echo "<input type='hidden' name='payment-method6' value='" . $payment_method6 . "'>";
 
     // submit button
-
+    echo "<br>";
     echo "<input class='form-button' type='submit' name='edit' value='Edit'>";
     echo "</form>";
         ?>

@@ -6,6 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Output Page</title>
+    <style>  
+        h1 {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ff85a2;
+        font-size: 32px;
+        margin-top: 10px;
+        text-align: center;
+        }
+        body {
+        background-color: #fde7e7;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+        line-height: 1.5em;
+        }
+    </style>
 </head>
 <body>
     <?php

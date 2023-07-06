@@ -1,4 +1,4 @@
-CREATE TABLE accounting_payments (
+CREATE TABLE accounting_receivable (
   id INT AUTO_INCREMENT PRIMARY KEY,
   customer_name2 VARCHAR(255) NOT NULL,
   transaction_date2 DATE NOT NULL,

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sips and Sweets New Employee Details </title>
+        <link rel="stylesheet" href="sas_hrd_newemployee.css">
+        <script src="https://kit.fontawesome.com/c473e870cb.js" crossorigin="anonymous"></script>
+        <style>
+            /* Button styling */
+            .submit-btn {
+              display: inline-block;
+              padding: 10px 20px;
+              font-size: 16px;
+              font-weight: bold;
+              text-transform: uppercase;
+              border: none;
+              border-radius: 5px;
+              background-color: #ea30af;
+              color: #fff;
+              cursor: pointer;
+              position: relative;
+              overflow: hidden;
+            }
+        
+            /* Animation */
+            .submit-btn::before {
+              content: '';
+              position: absolute;
+              top: -100%;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(249, 163, 183, 0.6);
+              transform: rotate(45deg);
+              transition: all 0.5s ease;
+            }
+        
+            .submit-btn:hover::before {
+              top: 0;
+              left: 0;
+            }
+          </style>
+    </head>
+    <body>
+        
+        
+        <div class="hero">
+            
+            <form action="sas_hrd_newemployeeviewing.php" method="POST">
+                
+                <div style="margin-top: 550px;" class="row">
+                    <div class="input-group">
+                        <input type="text" name="" id="fname" required>
+                        <label for="fname"> <i class="fa-solid fa-user"></i> First Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="mname" required>
+                        <label for="mname"> <i class="fa-solid fa-user"></i> Middle Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="lname" required>
+                        <label for="lname"> <i class="fa-solid fa-user"></i> Last Name</label>
+                    </div>
+                </div>
+               
+                <div class="row1">
+                    <div class="input-group">
+                        <input type="text" name="" id="address" required>
+                        <label for="address"><i class="fa-solid fa-location-dot"></i> Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="nationality" required>
+                        <label for="nationality"><i class="fa-solid fa-flag"></i> Nationality</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-group">
+                        <label2 for="name">Birthdate</label2>
+                        <input type="date" name="" id="bdate" required>
+                    </div>
+                    <div class="input-group">
+                        <label1 for="gender">Gender:</label1>
+                            <select name="gender" required>
+                                <option style="color: black;" value="male">Male</option>
+                                <option style="color: black;" value="female">Female</option>
+                                <option style="color: black;" value="other">Other</option>
+                            </select>
+                    </div>
+                    <div class="input-group">
+                        <label1 for="civil_status">Civil Status:</label1>
+                            <select name="civil_status" required>
+                                <option style="color: black;" value="single">Single</option>
+                                <option style="color: black;" value="married">Married</option>
+                                <option style="color: black;" value="divorced">Divorced</option>
+                                <option style="color: black;" value="widowed">Widowed</option>
+                            </select>
+                    </div>
+                </div>
+                
+                <div class="row1">
+                    <div class="input-group">
+                        <input type="text" name="" id="cpno" required>
+                        <label for="cpno"><i class="fa-solid fa-phone"></i> Cellphone No.</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="email" required>
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="input-group">
+                        <input type="text" name="" id="fatname" required>
+                        <label for="fatname"><i class="fa-solid fa-user"></i> Father's Name</label>
+                    </div>
+                    <div class="input-group">
+                        <label1 for="fatbdate">Father's Birthdate</label1>
+                        <input type="date" name="" id="fatbdate" required>  
+                    </div>
+                </div>
+                
+               <div class="row1">
+                <div class="input-group">
+                    <input type="text" name="" id="motname" required>
+                    <label for="motname"><i class="fa-solid fa-user"></i> Mother's Name</label>
+                </div>
+                <div class="input-group">
+                    <label1 for="motbdate">Mother's Birthdate</label1>
+                    <input type="date" name="" id="motbdate" required>
+                    <br></br>
+            </div>
+                </div>
+                <br></br>
+                <br></br>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" name="pschool" id="pschool" required>
+                        <label for="pschool"><i class="fa-solid fa-school"></i> Primary School Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="saddress" id="saddress" required>
+                        <label for="saddress"><i class="fa-solid fa-location-dot"></i> School Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="yrgraduated" required>
+                        <label for="yrgraduated"><i class="fa-solid fa-user-graduate"></i> Year Graduated</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" name="sschool" id="sschool" required>
+                        <label for="sschool"><i class="fa-solid fa-school"></i> Secondary School Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="2saddress" id="2saddress" required>
+                        <label for="2saddress"><i class="fa-solid fa-location-dot"></i> School Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="2yrgraduated" required>
+                        <label for="2yrgraduated"><i class="fa-solid fa-user-graduate"></i> Year Graduated</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" name="tschool" id="tschool" required>
+                        <label for="tschool"><i class="fa-solid fa-school"></i> Tertiary School Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="3saddress" id="3saddress" required>
+                        <label for="3saddress"><i class="fa-solid fa-location-dot"></i> School Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="" id="3yrgraduated" required>
+                        <label for="3yrgraduated"><i class="fa-solid fa-user-graduate"></i> Year Graduated</label>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" name="wduration" id="wduration" required>
+                        <label for="wduration"><i class="fa-solid fa-clock"></i> Work Duration (From - Until)</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="cname" id="cname" required>
+                        <label for="cname"><i class="fa-solid fa-building"></i> Company Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="caddress" id="caddress" required>
+                        <label for="caddress"><i class="fa-solid fa-location-dot"></i> Company Address</label>
+                    </div>
+                </div>
+
+                    <div class="row1">
+                        <div class="input-group">
+                            <input type="text" name="position" id="position" required>
+                            <label for="position"><i class="fa-sharp fa-solid fa-briefcase"></i> Position</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="rfl" id="rfl" required>
+                            <label for="rfl"><i class="fa-solid fa-person-running-fast"></i> Reason For Leaving the Company</label>
+                        </div>
+                       
+                    </div>
+
+                <div class="row1">
+                    <div class="input-group">
+                        <label1 for="doe">Date of Employment</label1>
+                        <input type="date" name=doe"" id="doe" required>  
+                        <br></br>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="cp" id="cp" required>
+                        <label for="cp"><i class="fa-sharp fa-solid fa-briefcase"></i> Company Position</label>
+                        
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="input-group">
+                        <label1 for="stype"><i class="fa-solid fa-sack-dollar"></i> Salary Type:</label1>
+                            <select name="stype" required>
+                                <option style="color: black;" value="cash">Cash</option>
+                                <option style="color: black;" value="check">Check</option>
+                                <option style="color: black;" value="direct deposit">Direct Deposit</option>
+                            </select>
+                            <br></br>
+                </div>
+                    <div class="input-group">
+                        <input type="number" name="sa" id="sa" required>
+                        <label for="sa"><i class="fa-solid fa-sack-dollar"></i> Salary Amount</label>
+                    </div>
+                </div>
+                <br></br>
+
+                <div class="row1">
+                    <div class="input-group">
+                        <input type="text" name="ssnum" id="ssnum" required>
+                        <label for="ssnum"> Social Security Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="pinum" id="pinum" required>
+                        <label for="pinum">Pag-Ibig Number</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" name="phnum" id="phnum" required>
+                        <label for="phnum">PhilHealth Insurance Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="tax" id="tax" required>
+                        <label for="tax">Tax Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="umpnum" id="umpnum" required>
+                        <label for="umpnum">Unified Multi-Purpose ID. Number</label>
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="input-group">
+                        <input type="text" name="ninum" id="ninum" required>
+                        <label for="ninum"> National Identification Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="pstnum" id="pstnum" required>
+                        <label for="pstnum">Postal Number</label>
+                    </div>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </form>
+
+            
+
+        </div>
+    </body>
+</html>
